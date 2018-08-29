@@ -1,0 +1,26 @@
+{
+  "name": "webproletarian",
+  "version": "0.1.0",
+  "description": "Simple WebWorkers framework for inline functions",
+  "main": "dist/webproletarian.js",
+  "scripts": {
+    "dev": "webpack --watch --config build/webpack.config.js",
+    "start": "npm run dev",
+    "build": "webpack --mode production --config build/webpack.config.js"
+  },
+  "repository": "github.com/lucasmenendez/webproletarian",
+  "keywords": [
+    "webworkers",
+    "threads",
+    "worker"
+  ],
+  "author": "Lucas Menendez",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.6"
+  }
+}
