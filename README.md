@@ -28,6 +28,9 @@ Clone or download zipped source code into `node_modules` project folder.
 git clone https://github.com/lucasmenendez/webproletarian.git <project>/node_modules/webproletarian
 ```
 
+## Documentation
+Checkout the [documentation](https://lucasmenendez.github.io/webproletarian/).
+
 
 ## Using WebProletarian
 Import dist version into the `index.html` file:
