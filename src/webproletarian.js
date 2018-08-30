@@ -57,16 +57,16 @@ export class WebProletarian {
 	 * @param  {string} event Event handler alias
 	 * @param  {function} func Event listener function
 	 */
-	listen(event, func) {
+	read(event, func) {
 		this.listeners[event] = func;
 	}
 	
 	/**
-	 * Emit event to worker
+	 * Fire event to worker
 	 * @param  {string} event Event handler alias to emit
 	 * @param  {Object} data Data to emit
 	 */
-	emit(event, data) {
+	fire(event, data) {
 		this.worker.postMessage({ event, data });
 	}
 	

@@ -33,16 +33,16 @@ export default class Proletarian {
 	 * @param  {string} event Event handler alias
 	 * @param  {function} func Event listener function
 	 */
-	listen(event, func) {
+	read(event, func) {
 		this.listeners[event] = func;
 	}
 
 	/**
-	 * Emit event to main thread
+	 * Fire event to main thread
 	 * @param  {string} event Event handler alias to emit
 	 * @param  {Object} data Data to emit
 	 */
-	emit(event, data) {
+	fire(event, data) {
 		self.postMessage({ event, data });
 	}
 }
